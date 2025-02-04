@@ -42,11 +42,6 @@ p{
 body{
     width: 100%;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   .contanier {
     display: flex;
     align-items: center;
@@ -63,9 +58,10 @@ body{
   }
   #navbar {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex: 1;
-    margin-left: 600px;
+    justify-content: center;
+    margin-left: 700px;
     padding-bottom: 10px;
   }
   #navbar ul {
@@ -74,10 +70,28 @@ body{
     padding-top: 30px;
     margin-top: 10px;
   }
-  #navbar ul li {
+  #navbar  li {
     margin-right: 20px;
   }
-  #navbar ul a {
+  #navbar li a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
+    transition: 0.3s ease;
   }
+  #navbar li a:hover{
+    color: rgb(100, 134, 202);
+    font-weight: bold;
+  }
+/* HOME PAGE */
+#banner{
+    background-image: url(./img/bannerhome.png);
+    height: 99vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
