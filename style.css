@@ -28,7 +28,7 @@ h6{
 
 p{
     font-size: 16px;
-    color: gray;
+    color: rgb(59, 56, 56);
     margin: 15px 0 20px 0; 
 }
 .section-p1{
@@ -42,14 +42,19 @@ p{
 body{
     width: 100%;
 }
-  .contanier {
+  .header {
     display: flex;
     align-items: center;
     padding: 10px 10px 5px 10px;
-    border-bottom: 3px solid hsl(331, 0%, 78%);
+    background-color: rgb(177, 174, 174);
+    border-bottom: 5px solid gray;
     width: 100%;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
   }
-  .contanier .logo img {
+  .header .logo img {
     width: 160px;
     height: 75px;
     margin: 5px;
@@ -94,4 +99,35 @@ body{
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+}
+#banner h4{
+  padding-bottom: 10px;
+  color: rgb(233, 19, 54);
+}
+#banner button{
+  background-color: transparent;
+  border: 0;
+  background-image: url(img/buttonstroke.png);
+  background-size: cover;
+  padding: 30px 80px 15px 60px;
+  cursor: pointer;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  font-size: medium;
+}
+
+/*categories*/
+#categories h3{
+  text-align: center;
+  padding: 20px 80px;
+  background-color: rgb(178, 180, 180);
+  margin-bottom: 2px;
+}
+
+#categories #catlog{
+  width: 100%;
+  border: 5px;
+  padding: 50px 20px;
+
 }
