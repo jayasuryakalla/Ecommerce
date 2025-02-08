@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>www.jsk.com</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="/img/logowh.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -14,9 +13,8 @@
   <body>
     <header class="header">
       <div class="logo">
-        <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        <a href="index.html"><img src="./img/logo.png" alt="logo" /></a>
       </div>
-
       <nav id="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -26,21 +24,21 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
-            <a href="cart.html"
-              ><i class="bi bi-cart4" style="font-size: large"></i
-            ></a>
+            <a href="cart.html"><i class="bi bi-cart4"></i></a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section id="accessories-banner">
-      <h2>DROP WILL BE <br />SOON!</h2>
+    <section id="cart-section">
+      <h2>Shopping Cart</h2>
+      <div id="cart-items"></div>
+      <h3>Total: <span id="cart-total">₹0</span></h3>
+      <button onclick="clearCart()">Clear Cart</button>
     </section>
 
     <footer class="footer">
       <div class="footer-container">
-        <!-- Logo and Newsletter Section -->
         <div class="footer-left">
           <div class="footer-logo">
             <img src="./img/logo.png" alt="Brand Logo" />
@@ -97,5 +95,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="cart.js"></script>
   </body>
 </html>
